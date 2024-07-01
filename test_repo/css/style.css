@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightpink;
+}
+
+.container {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border: 20px solid #fff;
+    text-align: center;
+}
+
+.headwrap {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    font-size: 4em;
+    color: #fff;
+    margin-top: 16rem;
+}
+
+@media screen and (min-width: 376px) {
+    .container {
+        border: 20px solid red;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .container {
+        border: 20px solid orange;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        border: 20px solid lightgreen;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        border: 20px solid cyan;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        border: 20px solid violet;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightpink;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: lightskyblue;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .headwrap {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .headwrap {
+        visibility: visible;
+    }
+}

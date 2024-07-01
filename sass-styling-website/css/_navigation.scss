@@ -1,0 +1,40 @@
+$font: Arial;
+$lightgreen: #03cac0;
+
+.headerpic {
+    width: 10%;
+}
+
+.navbar {
+    font-family: $font;
+    color: $lightgreen;
+    margin-bottom: 2rem;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        float: right;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.banner {
+    width: 100vw;
+    height: 10vw;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    justify-content: center;
+
+    h1 {
+        
+    }
+    
+}

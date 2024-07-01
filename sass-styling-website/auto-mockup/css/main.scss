@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+$font: Big Shoulders Display;
+$text: Quicksand;
+$fbold: 600;
+$tbold: 400;
+$circle: rgba(123, 123, 133, 0.432);
+$first: rgb(243, 132, 28);
+$second: rgb(37, 90, 59);
+$third: rgb(12, 60, 82);
+
+body {
+    font-family: $text;
+}
+
+h1 {
+    font-family: $font;
+    font-weight: $fbold;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+@mixin circle {
+    background-color: $circle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+@mixin automobile {
+    width: 20vw;
+    height: 60vh;
+    color: #fff;
+    padding: 3rem;
+    padding-right: 2rem;
+    font-weight: $tbold;
+}
+
+@mixin btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border-style: none;
+    font-family: $text;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #fff;
+    margin-top: 6rem;
+}
+
+.circle {
+    @include circle;
+}
+
+.b1 {
+    @include btn;
+    color: $first;
+}
+
+.b2 {
+    @include btn;
+    color: $second;
+}
+
+.b3 {
+    @include btn;
+    color: $third;
+}
+
+.card-1 {
+    @include automobile;
+    background-color: $first;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-2 {
+    @include automobile;
+    background-color: $second;
+}
+
+.card-3 {
+    @include automobile;
+    background-color: $third;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+/*
+@mixin automobile($color, $width, $height) {
+    width: 30vw;
+    height: 60vh;
+    padding: 2rem;
+}
+
+@mixin button {
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+body {
+    font-family: $font;
+}
+
+h1 {
+    font-weight: $fbold;
+    text-transform: uppercase;
+}
+
+
+.card-1 {
+    @include automobile($color, $width, $height);
+    background-color: rgb(255, 123, 0);
+
+    .circle-1::after {
+        font: var(--fa-font-solid);
+        content: "\f63c";
+    }
+}
+
+.card-2 {
+    @include automobile($color, $width, $height);
+    background-color: rgb(28, 73, 28);
+}
+
+.card-3 {
+    @include automobile($color, $width, $height);
+    background-color: rgb(37, 90, 59);
+}
+
+main {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: $circle;
+    border-radius: 50%;
+}
+
+.b1 {
+    @include button {
+        color: rgb(255, 123, 0);
+    }
+}
+
+.b2 {
+    @include button {
+        color: rgb(28, 73, 28);
+    }
+}
+
+.b3 {
+    @include button {
+        color:rgb(37, 90, 59);
+    }
+}
+
+*/

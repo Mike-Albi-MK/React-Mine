@@ -1,0 +1,20 @@
+$primary-color: rgb(33, 231, 82);
+
+$secondary-color: #cc4747;
+
+$mb-1: 1rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+h1:hover {
+    color: $secondary-color;
+}
+

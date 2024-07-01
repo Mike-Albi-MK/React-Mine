@@ -1,0 +1,28 @@
+@import "_navigation.scss";
+@import "_cards.scss";
+@import "_article.scss";
+@import "_aside.scss";
+
+$font: Arial;
+$black: #000000;
+$fontBold: 400;
+
+
+body {
+    font-family: $font;
+    font-size: 1rem;
+    color: $black;
+}
+
+h1 {
+    font-family: $font;
+    font-weight: $fontBold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: $font;
+    font-weight: $fontBold;
+    font-size: 2rem;
+}
+
