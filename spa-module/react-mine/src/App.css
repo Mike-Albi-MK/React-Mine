@@ -1,0 +1,47 @@
+.app-container {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+.layout {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card {
+  background: #012b58;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.counter {
+  margin-top: 20px;
+  padding: 20px;
+  background: #104781;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.counter:hover {
+  color: red;
+}
+
+.counter p {
+  color: orange;
+}
