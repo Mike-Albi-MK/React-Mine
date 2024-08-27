@@ -1,0 +1,125 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff8dc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #8b4513;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #faf0e6;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #556b2f;
+  outline: none;
+}
+
+button {
+  background-color: #6b8e23;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #556b2f;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #faf0e6;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+li.completed {
+  background-color: #dcdcdc;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #8b4513;
+}
+
+li input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  margin: 0 10px;
+  border: 1px solid #8b4513;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5dc;
+}
+
+li input[type="text"]:focus {
+  border-color: #6b8e23;
+  outline: none;
+}
+
+li button {
+  background-color: #8b4513;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: #a0522d;
+}
+
+li span {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #6b8e23;
+}
